@@ -14,15 +14,15 @@ export default function Dashboard() {
       <NavbarComponent />
       <Container fluid>
         <AddFolderButton currentFolder={folder}/>
-        {/* {childFolders.length>0 && (
+         {childFolders.length>0 && (
           <div className="d-flex flex-wrap">
-            {childFolders.map(childFolder =>(
-              <div key={childFolder.id} style={{ maxWidth:'250px '}} className="p-2"> */}
-                  {folder && <Folder folder={folder} />}
-                {/* </div> */}
-            {/* ))} */}
-          {/* </div> */}
-        {/* )} */}
+            {childFolders.map((childFolder) =>(
+              <div key={childFolder.id} style={{ maxWidth:"250px "}} className="p-2"> 
+                  <Folder folder={childFolder} />
+                 </div> 
+             ))} 
+           </div> 
+         )} 
       </Container>
     </>
   )

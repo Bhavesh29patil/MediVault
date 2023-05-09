@@ -3,7 +3,6 @@ import {database} from '../firebase'
 import { useAuth } from '../contexts/AuthContext'
 
 
-
 const ACTIONS = {
     SELECT_FOLDER: 'select-folder',
     UPDATE_FOLDER: 'update-folder',
@@ -44,7 +43,7 @@ export function useFolder(folderId = null, folder = null) {
         childfFiles: []
     })
 
-    const currentUser = useAuth();
+    const {currentUser} = useAuth();
 
     useEffect(() => {
         dispatch({ type: ACTIONS.SELECT_FOLDER, payload: { folderId, folder } })
@@ -60,7 +59,7 @@ export function useFolder(folderId = null, folder = null) {
 
         database.folders
         .doc(folderId)
-        .get().then(doc=>{
+        .get().then((doc)=>{
             dispatch({
                 type: ACTIONS.UPDATE_FOLDER,
                 payload: { folder: database.formatDoc(doc) }
@@ -84,7 +83,8 @@ export function useFolder(folderId = null, folder = null) {
         return database.folders
         .where('parentId','==',folderId)
         .where('userId' , '==', currentUser.uid)
-        .onSnapshot(snapshot =>{
+        // .orderBy("createdAt")
+        .onSnapshot((snapshot) =>{
             dispatch({
                 type: ACTIONS.SET_CHILD_FOLDERS,
                 payload: {childFolders: snapshot.docs.map(database.formatDoc)},
