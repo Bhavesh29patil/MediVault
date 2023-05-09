@@ -1,0 +1,18 @@
+.loginClass{
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    width: 130%;
+}
+
+.loginForm{
+    padding: 11px;
+
+}
+
+.loginImage{
+    width:200px;
+    height:200px;
+    text-align: center;
+    margin: 50px;
+}
