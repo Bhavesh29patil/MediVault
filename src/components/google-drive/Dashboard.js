@@ -6,7 +6,7 @@ import { useFolder } from '../../hooks/useFolder'
 import Folder from './Folder'
 
 export default function Dashboard() {
-  const {folder , childFolders} = useFolder("kMj6vnKe12zY8W05H2V2")
+  const {folder , childFolders} = useFolder("GWYhwv1VZd0rrVTJS71U")
   console.log(childFolders)
   
   return (
