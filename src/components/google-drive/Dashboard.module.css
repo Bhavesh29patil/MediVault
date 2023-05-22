@@ -1,0 +1,11 @@
+.dashboard{  
+    background-color: #e8e4e6;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../../../public/mn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 90%;
+    background-attachment: fixed;
+    height: 100vh;
+}
+

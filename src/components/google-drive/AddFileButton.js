@@ -7,6 +7,7 @@ import { v4 as uuidV4 } from 'uuid'
 import { useState } from 'react'
 import  ReactDOM  from 'react-dom'
 import { Toast,  ProgressBar } from 'react-bootstrap'
+import {message} from "antd"
 
 export default function AddFileButton({currentFolder}) {
 
@@ -20,7 +21,7 @@ export default function AddFileButton({currentFolder}) {
     if(currentFolder == null || file == null) return
     
     const id = uuidV4()
-    setUploadingFiles(prevUploadingFiles => [
+    setUploadingFiles((prevUploadingFiles) => [
         ...prevUploadingFiles,
         {id: id,
         name: file.name,
@@ -30,7 +31,8 @@ export default function AddFileButton({currentFolder}) {
     ])
 
     const filePath = currentFolder === ROOT_FOLDER ? `${currentFolder.path.join("/")}/${file.name}` : `${currentFolder.path.join("/")}/${currentFolder.name}/${file.name}`
-    console.log(filePath)
+    
+    console.log(`Adding File ${filePath} `);
 
 
     const uploadTask = storage.ref(`/files/${currentUser.uid}/${filePath}`).put(file)
@@ -47,8 +49,8 @@ export default function AddFileButton({currentFolder}) {
             })
         })
     } , () => {
-        setUploadingFiles(prevUploadingFiles =>{
-            return prevUploadingFiles.map(uploadFile => {
+        setUploadingFiles((prevUploadingFiles) =>{
+            return prevUploadingFiles.map((uploadFile) => {
                 if(uploadFile.id === id){
                     return { ...uploadFile , error: true}
                 }
@@ -67,7 +69,7 @@ export default function AddFileButton({currentFolder}) {
             database.files.where("name" , '==' , file.name).where("userId" , '==' , currentUser.uid).where("folderId" , "==" , currentFolder.id).get().then(existingFiles => {
                 const existingFile = existingFiles.docs[0]
                 if(existingFile){
-                    alert("File Updated Successfully")
+                    {message.success(`${file.name} Updated Successfully`)}
                     existingFile.ref.update({url: url})
                 }
                 else{
@@ -78,6 +80,7 @@ export default function AddFileButton({currentFolder}) {
                         folderId: currentFolder.id,
                         userId: currentUser.uid,
                     })
+                    {message.success(`${file.name} Added Successfully`)}
                 }
             })
         })
@@ -92,7 +95,7 @@ export default function AddFileButton({currentFolder}) {
     {uploadingFiles.length > 0 && 
     ReactDOM.createPortal(
         <div style={{position: 'absolute' , bottom: '1rem' , right: '1rem' , maxWidth: '250px'}}>
-            {uploadingFiles.map((file) => {
+            {uploadingFiles.map((file) => (
                 <Toast key={file.id} onClose={()=>{
                     setUploadingFiles((prevUploadingFiles) => {
                         return prevUploadingFiles.filter((uploadFile) => {
@@ -100,21 +103,20 @@ export default function AddFileButton({currentFolder}) {
                         })
                     })
                 }}>
-                <Toast.Header closeButton={file.error} className="text-truncate w-100 d-block">
+                <Toast.Header closeButton={file.error} className="text-truncate w-100 h-100 d-block">
                   {file.name}
                 </Toast.Header>
                 <Toast.Body>
                   <ProgressBar
                     animated={!file.error}
-                    variant={file.error ? 'danger' : 'primary'}
+                    variant={file.error ? 'danger' : 'success'}
                     now={file.error ? 100 : file.progress * 100}
                     label={file.error ? 'Error' : `${Math.round(file.progress * 100)}%`}
                   />
-                  {console.log("hii")}
                 </Toast.Body>
               </Toast>
               
-            })}
+            ))}
         </div>,
         document.body
     )}

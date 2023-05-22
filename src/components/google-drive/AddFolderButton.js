@@ -5,6 +5,7 @@ import { faFolderPlus } from '@fortawesome/free-solid-svg-icons'
 import {database} from '../../firebase'
 import{ useAuth} from '../../contexts/AuthContext'
 import { ROOT_FOLDER } from '../../hooks/useFolder'
+import styles from './Dashboard.module.css'
 
 export default function AddFolderButton({currentFolder}) {
     const [open,setOpen] = useState(false)
@@ -35,7 +36,7 @@ export default function AddFolderButton({currentFolder}) {
         if(currentFolder !== ROOT_FOLDER){
             path.push({name : currentFolder.name , id : currentFolder.id})
         }
-
+        
         database.folders.add({
             name : name,
             parentId:currentFolder.id,
@@ -50,7 +51,7 @@ export default function AddFolderButton({currentFolder}) {
 
   return (
     <>
-    <Button onClick={openModal} variant='btn btn-outline-success' size='lg' >
+    <Button onClick={openModal} variant='btn btn-outline-success' size='lg' className={styles.btn}>
     <FontAwesomeIcon icon={faFolderPlus}/>
     </Button>
     <Modal show={open} onHide={closeModal}>

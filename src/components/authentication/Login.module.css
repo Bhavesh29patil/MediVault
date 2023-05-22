@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;700;800&family=Sintony:wght@400;700&display=swap');
+
+
 .loginClass{
     display: flex;
     flex-direction: row;
@@ -7,12 +11,72 @@
 
 .loginForm{
     padding: 11px;
-
 }
+
 
 .loginImage{
     width:200px;
     height:200px;
     text-align: center;
     margin: 50px;
+}
+.login_img{
+    background-color:#abd1c6;
+    margin: 2% auto;
+    
+}
+/* #FAF8EF */
+
+.cardBody{
+    background-color: #FAF8EF;
+    border-radius: 1%;
+}
+
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginBg{
+    background-color: #004643  ;
+    width: 50vw;
+}
+
+.cardBody h2{
+    font-family: 'Sintony', sans-serif;
+    font-weight: 700;
+}
+
+.cardBody button{
+    font-family: 'Sintony', sans-serif;
+    font-weight: 700;
+}
+
+.cardBody{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+/* font-family: 'DM Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+ */
+
+
+ .profileBg{
+    background-color: #004643;
+ }
+
+ .profileCardBg{
+    font-family: 'Poppins', sans-serif;
+    border-radius: 100%;
+    background-color: #fffffe;
+   
+ }
+
+.logFont {
+    font-family: 'Poppins', sans-serif;
 }

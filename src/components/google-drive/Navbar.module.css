@@ -1,0 +1,34 @@
+.nav{
+    background-color: #004643;
+    color: #fffffe;
+}
+
+
+.navcom1{
+    background-color: #004643;
+}
+.navcom1 h2{
+    color: #fffffe;
+    background-color: #004643;
+    padding: 2%;
+    margin: 2%;
+    font-family: 'Sintony', sans-serif;
+    font-weight:600;
+}
+
+.navcom2{
+    background-color: #004643;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.nav p{
+    background-color: #004643;
+    font-family: 'Sintony', sans-serif;
+}
+
+.navcom2 p:hover{
+    text-decoration: underline;
+    color: #fffffe;
+    background-color: #004643;
+}
