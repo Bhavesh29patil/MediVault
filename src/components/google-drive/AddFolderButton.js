@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Button, Modal , Form} from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFolderPlus } from '@fortawesome/free-solid-svg-icons'
+
 import {database} from '../../firebase'
 import{ useAuth} from '../../contexts/AuthContext'
 import { ROOT_FOLDER } from '../../hooks/useFolder'
@@ -52,7 +53,8 @@ export default function AddFolderButton({currentFolder}) {
   return (
     <>
     <Button onClick={openModal} variant='btn btn-outline-success' size='lg' className={styles.btn}>
-    <FontAwesomeIcon icon={faFolderPlus}/>
+        Create Folder
+    <FontAwesomeIcon icon={faFolderPlus} style={{marginLeft: "10px"}} />
     </Button>
     <Modal show={open} onHide={closeModal}>
         <Form onSubmit={formSubmitHandler}>

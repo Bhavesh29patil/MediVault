@@ -58,7 +58,7 @@ export default function File({ file }) {
     <>
       <div className='d-inline-flex-wrap'>
         <Dropdown overlay={menu} trigger={["contextMenu"]}>
-          <a href={file.url} target="_blank" className="btn btn-outline-dark text-truncate w-100 p-2" >
+          <a href={file.url} target="_blank" className="btn btn-outline-dark text-truncate w-100 p-2 border border-dark border-2 ">
             <FontAwesomeIcon icon={faFile} className="px-1" />
             {file.name}
           </a>

@@ -8,6 +8,7 @@ import PrivateRoute from "./authentication/PrivateRoute";
 import UpdateProfile from "./authentication/UpdateProfile"
 import Dashboard from "./google-drive/Dashboard"
 import LandingPage from "./google-drive/LandingPage"
+import AboutUsData from "./authentication/AboutUsData"
 
 
 
@@ -27,10 +28,11 @@ function App() {
               <Route path="/update-profile" element={<PrivateRoute><UpdateProfile /></PrivateRoute>}
               ></Route>
               {/* auth */}
+              <Route path="/home" element={<LandingPage />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
+              <Route path="/about-us" element={<AboutUsData />} />
               <Route path="/forgot-password" element={<ForgotPassword />} />
-              <Route path="/home" element={<LandingPage />} />
             </Routes>
           </AuthProvider>
         </Router>

@@ -17,7 +17,7 @@ export default function LandingPage() {
       <img src="sdsd" className="logo" />
       <ul>
         <li>
-          <a href="#">ABOUT US</a>
+          <a href="/about-us">ABOUT US</a>
         </li>
         {/* <li><a href="#">PORTFOLIO</a></li>
           <li><a href="#">SERVICES</a></li>

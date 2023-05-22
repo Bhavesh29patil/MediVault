@@ -38,7 +38,6 @@ export default function Login() {
             </div>
             <div className={styles.loginBg}>
             <CenteredContainer >
-            
                 <Card > 
                         <Card.Body className={styles.cardBody}>
                             <h2 className='text-center mb-4'>Login</h2>

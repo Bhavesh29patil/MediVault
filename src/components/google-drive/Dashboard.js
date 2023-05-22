@@ -42,7 +42,7 @@ export default function Dashboard() {
           {childFiles.length > 0 && (
             <div className="d-flex flex-wrap">
               {childFiles.map((childFile) =>(
-                <div key={childFile.id} style={{ maxWidth:"250px "}} className="p-2"> 
+                <div key={childFile.id} style={{ maxWidth:"250px" }} className="p-2"> 
                     <File file={childFile} />
                   </div> 
               ))} 

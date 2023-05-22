@@ -80,6 +80,7 @@ export default function AddFileButton({currentFolder}) {
                         folderId: currentFolder.id,
                         userId: currentUser.uid,
                     })
+                    {console.log("first")}
                     {message.success(`${file.name} Added Successfully`)}
                 }
             })
@@ -87,9 +88,10 @@ export default function AddFileButton({currentFolder}) {
     })
   }
     return (
-    <>
-    <label className='btn btn-outline-success btn-lg m-2'>
-        <FontAwesomeIcon icon={faFileUpload} />
+        <>
+    <label className='btn btn-outline-success btn-lg m-2' >
+        Upload File
+        <FontAwesomeIcon icon={faFileUpload} style={{marginLeft: "10px"}} />
         <input type="file" onChange={handleUpload} style={{opacity: 0 , position: 'absolute' , left: '-9999px'}} />
     </label>
     {uploadingFiles.length > 0 && 
