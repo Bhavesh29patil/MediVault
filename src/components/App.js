@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import PrivateRoute from "./authentication/PrivateRoute";
 import UpdateProfile from "./authentication/UpdateProfile"
 import Dashboard from "./google-drive/Dashboard"
+import LandingPage from "./google-drive/LandingPage"
 
 
 
@@ -29,6 +30,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/forgot-password" element={<ForgotPassword />} />
+              <Route path="/home" element={<LandingPage />} />
             </Routes>
           </AuthProvider>
         </Router>
