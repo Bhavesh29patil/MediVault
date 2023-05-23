@@ -10,6 +10,12 @@ export default function NavbarComponent() {
       <Nav.Link href = "/user" className={styles.navcom2}>
       <p>Profile</p>
       </Nav.Link>
+      <Nav.Link href = "/blood-bank" className={styles.navcom2}>
+      <p>Blood Bank</p>
+      </Nav.Link>
+      <Nav.Link href = "/bed-booking" className={styles.navcom2}>
+      <p>Blood Bank</p>
+      </Nav.Link>
     </Navbar>
   )
 }

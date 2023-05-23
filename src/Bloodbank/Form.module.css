@@ -1,0 +1,18 @@
+.form1{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: larger;
+    font-weight: 700;
+    margin-top: 4vh;
+}
+
+.form1 button{
+    background-color: tomato;
+    color: #ffffff;
+    border: none;
+    padding: 1%;
+    width: 10%;
+    font-size: large;
+    font-weight: 500;
+
+}

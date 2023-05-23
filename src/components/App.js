@@ -9,6 +9,8 @@ import UpdateProfile from "./authentication/UpdateProfile"
 import Dashboard from "./google-drive/Dashboard"
 import LandingPage from "./google-drive/LandingPage"
 import AboutUsData from "./authentication/AboutUsData"
+import FormData from "../Bloodbank/FormData"
+import Bed from "../Bedreservation/Bed"
 
 
 
@@ -33,6 +35,8 @@ function App() {
               <Route path="/signup" element={<Signup />} />
               <Route path="/about-us" element={<AboutUsData />} />
               <Route path="/forgot-password" element={<ForgotPassword />} />
+              <Route path="/blood-bank" element={<FormData />} />
+              <Route path="/bed-booking" element={<Bed />} />
             </Routes>
           </AuthProvider>
         </Router>
