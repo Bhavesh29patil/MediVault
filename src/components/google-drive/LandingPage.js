@@ -14,7 +14,7 @@ export default function LandingPage() {
   /> */}
   <div className="hero">
     <nav className='nav1'>
-      <img src="sdsd" className="logo" />
+      <img src="././Assets/logo.png" className="logo" />
       <ul>
         <li>
           <a href="/about-us">ABOUT US</a>
@@ -28,7 +28,7 @@ export default function LandingPage() {
       <h1>
         Medi<span>Vault</span>
       </h1>
-      <p>Help to keep yoir doc safe and handy </p>
+      <p>Help to keep your Docs safe and handy! </p>
       <a href="/login" className='log'>LOGIN</a>
       <a href="/signup" className='sig'>SIGNUP</a>
     </div>
