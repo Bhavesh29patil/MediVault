@@ -38,9 +38,10 @@ export default function Login() {
             </div>
             <div className={styles.loginBg}>
             <CenteredContainer >
+                <h2 className='text-center mb-4' style={{color: 'white'}}>MediVault</h2>
                 <Card > 
                         <Card.Body className={styles.cardBody}>
-                            <h2 className='text-center mb-4'>Login</h2>
+                            <h2 className='text-center mb-4'>LOGIN</h2>
                             {error && <Alert variant="danger">{error}</Alert>}
                             <Form onSubmit={formSubmitHandler}>
                                 <Form.Group id="email">
@@ -51,7 +52,7 @@ export default function Login() {
                                     <Form.Label>Password</Form.Label>
                                     <Form.Control type="password" ref={passwordRef} required></Form.Control>
                                 </Form.Group>
-                                <Button disabled={loading} variant="dark" className="w-100 mt-3" type="submit">login</Button>
+                                <Button disabled={loading} variant="dark" className="w-100 mt-3" type="submit">Login</Button>
                             </Form>
                         </Card.Body>
                         <div className={styles.logFont}>
@@ -60,6 +61,7 @@ export default function Login() {
                         </div>
                         <div className='w-100 text-center mt-2 mb-2'>
                             <Link to="/forgot-password" style={{ textDecoration: 'none' }}>Forgot Password ?</Link>
+                            <br></br>
                             <Link to="/home" style={{ textDecoration: 'none' }}>Home</Link>
                         </div>
                         </div>

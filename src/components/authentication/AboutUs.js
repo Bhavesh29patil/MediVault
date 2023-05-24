@@ -14,18 +14,12 @@ export default function AboutUs(props) {
           <h3>{props.name}</h3>
           <p>{props.rollno}</p>
           <div className={styles.iconz}>
-            <a href={props.insta}>
+            <a href={props.insta} target='_blank'>
             <i className="fab fa-instagram" />
             </a>
-            <a href={props.linkedin}>
+            <a href={props.linkedin} target='_blank'>
               <i className="fab fa-linkedin" />
             </a>
-            {/* <a href="#">
-              <i className="fab fa-github" />
-            </a>
-            <a href="#">
-              <i className="fas fa-envelope" />
-            </a> */}
           </div>
         </div>
       </div>

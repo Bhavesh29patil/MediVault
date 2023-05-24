@@ -5,8 +5,11 @@ export default function NavbarComponent() {
   return (
     <Navbar expand="lg" className={styles.nav}>
       <Navbar.Brand href="/" className={styles.navcom1}>
-        <h2>MediVault</h2>
+        <h2 style={{paddingLeft: "10%"}}>MediVault</h2>
       </Navbar.Brand>
+      <Nav.Link href = "/home" className={styles.navcom2}>
+      <p>Home</p>
+      </Nav.Link>
       <Nav.Link href = "/user" className={styles.navcom2}>
       <p>Profile</p>
       </Nav.Link>
@@ -14,7 +17,7 @@ export default function NavbarComponent() {
       <p>Blood Bank</p>
       </Nav.Link>
       <Nav.Link href = "/bed-booking" className={styles.navcom2}>
-      <p>Blood Bank</p>
+      <p>Bed-booking</p>
       </Nav.Link>
     </Navbar>
   )

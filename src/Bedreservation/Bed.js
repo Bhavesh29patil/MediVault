@@ -1,24 +1,30 @@
-import styles from './Bed.module.css'
-// import './BedJs'
+import styles from "./Bed.module.css";
+import React,{useEffect, useState} from "react";
 
-const Bed = () => {
+const Bed = (props) => {
+
+    const [isValid, setIsValid] = useState(true);
+
+    const onBookHandler = ()=>{
+        setIsValid(false);
+    }
+
+    const undo = () => {
+        setIsValid(true);
+    }
+
     return (
         <>
-            <div className={styles.top}>
-                <div className={styles.red}>
-                    <h3>booked</h3>
+           <div className={styles.sup}>
+                <div className={`${isValid ? styles.valid : styles.invalid}`}> 
+                    {props.cnt}
                 </div>
-                <div className={styles.green}>
-                    <h3>
-                        not
-                        <br />
-                        booked
-                    </h3>
-                </div>
+                <button onClick={onBookHandler}>Book</button>
+                <button onClick={undo}>undo</button>
             </div>
-            <div id="main"></div>
         </>
     )
+
 }
 
-export default Bed 
+export default Bed;

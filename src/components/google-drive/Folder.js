@@ -46,7 +46,7 @@ export default function Folder({folder}) {
       state: {folder : folder},
     }} 
       variant="outline-dark" 
-      className='text-truncate w-100 p-2' as={Link}>
+      className='text-truncate w-100 p-2 border border-dark border-2 "' as={Link}>
     <FontAwesomeIcon icon={ faFolder} className='px-1' />
         {folder.name}
     </Button>

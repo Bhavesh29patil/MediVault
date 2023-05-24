@@ -21,9 +21,10 @@
     margin: 50px;
 }
 .login_img{
-    background-color:#abd1c6;
-    margin: 2% auto;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6%;    
 }
 /* #FAF8EF */
 

@@ -1,59 +1,39 @@
-*{  
-    box-sizing: border-box;  
-}
-::-webkit-scrollbar{
-    display: none;
-    width: 0px;
+.sup{
+    margin: 5%;
 }
 
-body{
-    background-color: #DBDFEA;
-}
-#main{
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-#main div{
-    border: 1px solid;
-    height: 130px;
-    width: 80px;
-    /* padding: 30px; */
-    justify-content: center;
-    margin: 40px;
+.valid{
+    height: 20vh;
+    width: 8vw;
+    background-color: green;
+    margin: 5%;
     display: flex;
     align-items: center;
-    background-color: #DAE5D0;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.top{
-    display: flex;
     justify-content: center;
-    background-color: #ACB1D6;
-    border-radius: 10px;
-    width: 60%;
-    margin: auto;
+    color: #fff;
 }
 
-.red{
-    background-color: #FF7878;
-    height: 100px;
-    width: 70px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 30px;
-    text-align: center;
+.invalid{
+    height: 20vh;
+    width: 8vw;
+    background-color: tomato;
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
 
-.green{
-    background-color: #DAE5D0;
-    height: 100px;
-    width: 70px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 30px;
-    text-align: center;
+.sup button:nth-child(even){
+    border: none;
+    background-color: tomato;
+    color: #fff;
+    margin: 4%;
+}
+
+.sup button:nth-child(odd){
+    border: none;
+    background-color: green;
+    color: #fff;
+    margin: 4%;
 }

@@ -10,7 +10,7 @@ import Dashboard from "./google-drive/Dashboard"
 import LandingPage from "./google-drive/LandingPage"
 import AboutUsData from "./authentication/AboutUsData"
 import FormData from "../Bloodbank/FormData"
-import Bed from "../Bedreservation/Bed"
+import BedJs from "../Bedreservation/BedJs"
 
 
 
@@ -36,7 +36,7 @@ function App() {
               <Route path="/about-us" element={<AboutUsData />} />
               <Route path="/forgot-password" element={<ForgotPassword />} />
               <Route path="/blood-bank" element={<FormData />} />
-              <Route path="/bed-booking" element={<Bed />} />
+              <Route path="/bed-booking" element={<BedJs />} />
             </Routes>
           </AuthProvider>
         </Router>

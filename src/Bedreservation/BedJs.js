@@ -1,21 +1,37 @@
-const beds = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-let arr1 = [];
+import styles from './BedJs.module.css';
+import Bed from './Bed';
+import React,{useState} from 'react';
 
-let str = ` `;
-beds.forEach((bed)=>{
-    str = str + `<div for='${bed}' id='${bed}' onClick={onClickHandler(${bed})}>${bed}</div>`;
-})
+function BedJs() {
+  
+  const [list, setList] = useState([]);
+  const [count,setCount] = useState(1);
+  const[add,setAdd] = useState(false);
 
-document.getElementById('main').innerHTML=str;
-console.log(str);
-onClickHandler = (thisbed) => {
-    if(arr1.indexOf(thisbed) === -1){
-        arr1.push(thisbed);
-        document.getElementById(`${thisbed}`).style.background = "#FF7878";
-    }else{
-        document.getElementById(`${thisbed}`).style.background = "#DAE5D0";
-        arr1.splice(arr1.indexOf(thisbed),1);
-    }
+  const onClickHandler =()=> {
+    setCount(count+1);
+    setList((prev)=>[...prev, count]);
 
-    console.log(thisbed);
+  }
+
+  const onYes = ()=>{
+    setAdd(true);    
+  }
+
+  const onNo = () =>{
+    setAdd(false);
+  }
+
+  return (
+    <div >
+      Add more beds: <button onClick={onYes}>Yes</button> <button onClick={onNo}>NO</button>
+      <br></br>
+      {add && <button onClick={onClickHandler}>Add Bed</button>}
+      <div className={styles.main}>
+        {list.map((cnt)=><Bed cnt={cnt}/>)}
+      </div>
+    </div>
+  );
 }
+
+export default BedJs;

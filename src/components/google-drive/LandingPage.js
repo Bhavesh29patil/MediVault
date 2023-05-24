@@ -1,5 +1,6 @@
 import React from 'react'
 import './LandingPage.css'
+import loggo from '../../Assets/logo.png'
 
 export default function LandingPage() {
   return (
@@ -14,10 +15,10 @@ export default function LandingPage() {
   /> */}
   <div className="hero">
     <nav className='nav1'>
-      <img src="././Assets/logo.png" className="logo" />
+      <img src={loggo} className="logo" />
       <ul>
         <li>
-          <a href="/about-us">ABOUT US</a>
+          <a href="/about-us" >ABOUT US</a>
         </li>
         {/* <li><a href="#">PORTFOLIO</a></li>
           <li><a href="#">SERVICES</a></li>
@@ -35,13 +36,7 @@ export default function LandingPage() {
     <div className="images">
       {/* <img src="images/shape.png" class="shape"> */}
       {/* <img src="images/MediVaultWebsite.png" class="girl"> */}
-      <lottie-player
-        src="https://assets8.lottiefiles.com/packages/lf20_iivslabn.json"
-        background="transparent"
-        speed={1}
-        loop=""
-        autoPlay=""
-      />
+      <lottie-player src="https://lottie.host/379288dd-e52f-4a62-bda9-a6be0c60929c/nOdOQpF786.json" background="transparent" speed="1" style={{ width: "800px", height: "700px"}} loop autoplay></lottie-player>
     </div>
     {/* <div class="social">
      <a href="#"><i class="fab fa-dribbble"></i></a>

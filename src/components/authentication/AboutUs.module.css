@@ -28,11 +28,13 @@
     color: #004643;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.4s;
     background-color: #fffffe;
     margin: 1%;
     width: 300px;
     margin: 40px;
+    border: 3px solid #004643;
+    
     
   }
   .card .imgContainer {
@@ -76,13 +78,14 @@
   .card:hover {
     background: linear-gradient(#044d4a, #024d4a);
     color: #fffffe;
-    transform: scale(1.15)
+    transform: scale(1.15);
+    border-bottom: 5px solid #FED049;
   }
   .card:hover .imgContainer {
     transform: scale(1.15);
   }
   .card:hover .iconz {
-    color: #f9bc60;
+    color: #FED049;
   }
   @media screen and (min-width: 768px) {
     section {
@@ -109,11 +112,11 @@
 .bgColor{
     background-color:#abd1c6;
     margin: auto;
-    padding: 2%;
+    padding: 3%;
 
 }
 .h1{
-    color: #001e1d;
+    /* color: black; */
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     font-weight: 500;
@@ -122,7 +125,7 @@
 }
 
 .para1{
-    color: #0f3433;
+    /* color: #0f3433; */
     font-family: 'Lora', serif;
     font-weight: 400;
     font-size: 18px;
@@ -130,14 +133,14 @@
 }
 
 .para{
-    color: #0f3433;
+    /* color: #0f3433; */
     font-family: 'Lora', serif;
     font-weight: 400;
     font-size: 18px;
  
 }
 .para2{
-    color: #0f3433;
+    /* color: #0f3433; */
     font-family: 'Lora', serif;
     font-weight: 600;
     font-size: 18px;
@@ -145,7 +148,7 @@
 }
 
 .h2{
-    color: #001e1d;
+    /* color:#EBB02D; */
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     font-weight: 500;
@@ -153,8 +156,9 @@
 }
 
 .link{
-    color: #e16162;
+    color: #004643;
 }
+
 
 .carr{
     color: #0f3433;
@@ -166,15 +170,49 @@
 .first{
   background-color: #fffffe;
   border-radius: 20px;
-  padding: 4%;
+  padding: 2%;
   margin-bottom: 4%;
+  transition: 0.5s;
+  border-top: 8px solid #004643;
+  
+  
 }
-.first h1{
-  text-decoration: underline;
+
+.first:hover {
+  background-color: #004643;
+  color: #fffffe;
+  transform: scale(1.03);
+  border-top: 8px solid #FED049;
+  .h1{
+    color: #FED049;
+  }
+  .h2{
+    color: #FED049;
+  }
 }
+
+
 
 .contact{
   background-color: #fffffe;
   width: 100%;
   padding: 4%;
+  border-bottom: 10px solid #004643;
+  border-radius: 20px;
+  transition: 0.2s;
+
+}
+.contact:hover{
+  background-color: #dfdedd;
+  transform: scale(1.02);
+  width: 100%;
+  padding: 4%;
+  border-bottom: 8px solid ;
+  border-radius: 20px;
+  .link{
+    color: #3f13de;
+  }
+  .h2{
+    color: #3f13de;
+  }
 }

@@ -53,9 +53,10 @@ export default function SignUp() {
 
             <div className={styles.loginBg}>
                 <CenteredContainer>
+                <h2 className='text-center mb-4' style={{color: 'white'}}>MediVault</h2>
                     <Card>
                         <Card.Body className={styles.cardBody}>
-                            <h2 className='text-center mb-4'>Signup</h2>
+                            <h2 className='text-center mb-4'>SIGN-UP</h2>
                             {error && <Alert variant="danger">{error}</Alert>}
                             <Form onSubmit={formSubmitHandler}>
                                 <Form.Group id="email">
@@ -75,7 +76,9 @@ export default function SignUp() {
                         </Card.Body>
                         <div className={styles.logFont}>
                         <div className='w-100 text-center mt-2 mb-2'>
-                            Already Have an Account? <Link to="/login">Log In</Link>
+                            Already Have an Account? <Link to="/login" style={{ textDecoration: 'none' }}>Log In</Link>
+                            <br />
+                            <Link to="/home" style={{ textDecoration: 'none' }}>Home</Link>
                         </div >
                         </div>
                     </Card >
