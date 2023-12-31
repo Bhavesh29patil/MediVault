@@ -56,7 +56,6 @@
 
 .cardBody{
     font-family: 'Poppins', sans-serif;
-
 }
 
 
@@ -81,3 +80,22 @@ font-family: 'Poppins', sans-serif;
 .logFont {
     font-family: 'Poppins', sans-serif;
 }
+
+@media (max-width: 1065px) {
+    /* Adjust styles for extra small screens (e.g., smartphones) */
+    .w-100 {
+     width: 100%;
+     background-color: red;
+    }
+    .login_img img{
+        width: 0px;
+        height: 0px;
+    }
+    .loginBg{
+        background-color: #004643  ;
+        width: 100%;
+    }
+    .login_img{
+        margin-left: 0px;    
+    }
+  }

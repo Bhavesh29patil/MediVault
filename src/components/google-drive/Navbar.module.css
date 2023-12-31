@@ -32,3 +32,34 @@
     color: #fffffe;
     background-color: #004643;
 }
+
+@media (max-width: 533px) {
+    /* Adjust styles for extra small screens (e.g., smartphones) */
+    .navcom1 h2{
+        color: #fffffe;
+        background-color: #004643;
+        padding-top: 2%;
+        margin-top: 2%;
+        font-family: 'Sintony', sans-serif;
+        font-size: large;
+    }
+    
+    .navcom2{
+        background-color: #004643;
+        margin: 0px;
+    }
+    
+    .nav p{
+        background-color: #004643;
+        margin-top: 10%;
+        font-family: 'Sintony', sans-serif;
+        font-size: small;
+    }
+    
+    .navcom2 p:hover{
+        text-decoration: underline;
+        color: #fffffe;
+        background-color: #004643;
+    }
+
+  }
