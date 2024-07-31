@@ -103,7 +103,6 @@ Medivault is an innovative project aimed at revolutionizing the way individuals 
 
 * [![React][React.js]][React-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![Node][Node.js]][Node-url]
 * [![Firebase][Firebase.js]][Firebase-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
