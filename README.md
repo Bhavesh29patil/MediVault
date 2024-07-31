@@ -30,20 +30,36 @@ Medivault is an innovative project aimed at revolutionizing the way individuals 
 ## Screenshots
 
 <p align="center"><em>Home Screen</em></p>
-<img src="https://github.com/Bhavesh29patil/MediVault/assets/100946390/8f36106e-7b08-4419-8d09-91152cb88241" alt="Home Screen" width="600" height="400" >
+<div align="center">
+<img align="center" src="https://github.com/Bhavesh29patil/MediVault/assets/100946390/8f36106e-7b08-4419-8d09-91152cb88241" alt="Home Screen" width="600" height="400" >
+</div>
 <br></br>
-<img src="https://github.com/Bhavesh29patil/MediVault/assets/100946390/dbe12317-6874-4dd2-a8ca-2b84e7cd799d" alt="Login Screen" width="450" height="300">
-<img src="https://github.com/Bhavesh29patil/MediVault/assets/100946390/c7bccef6-e116-442a-b4c0-d7337bcef3e7" alt="Signup Screen" width="450" height="300">
-<img src="https://github.com/Bhavesh29patil/MediVault/assets/100946390/b12dad54-4cf9-470a-99d4-e16236d99776" alt="Signup Screen" width="450" height="300">
-<img src="https://github.com/Bhavesh29patil/MediVault/assets/100946390/d8c06a3d-fcf7-467a-8586-8fa5b2afa48c" alt="Signup Screen" width="450" height="300">
+<div align="center">
+<img align="center" src="https://github.com/Bhavesh29patil/MediVault/assets/100946390/dbe12317-6874-4dd2-a8ca-2b84e7cd799d" alt="Login Screen" width="450" height="300">
+ </div>
+  <br>
+ <div align="center">
+<img align="center" src="https://github.com/Bhavesh29patil/MediVault/assets/100946390/c7bccef6-e116-442a-b4c0-d7337bcef3e7" alt="Signup Screen" width="450" height="300">
+ </div>
+  <br>
+<div align="center">
+<img align="center" src="https://github.com/Bhavesh29patil/MediVault/assets/100946390/b12dad54-4cf9-470a-99d4-e16236d99776" alt="Signup Screen" width="450" height="300">
+ </div>
+ <br>
+<div align="center">
+<img align="center" src="https://github.com/Bhavesh29patil/MediVault/assets/100946390/d8c06a3d-fcf7-467a-8586-8fa5b2afa48c" alt="Signup Screen" width="450" height="300">
+ </div>
+<br></br>
+<div align="center">
+<img align="center" src="https://github.com/Bhavesh29patil/MediVault/assets/100946390/94fcd3bc-df22-43ba-b867-5b496511ba3f" alt="Screenshot 2" width="600" height="400">
+<p align="center"><em>Screenshot </em></p>
+ </div>
 
 <br></br>
-<img src="https://github.com/Bhavesh29patil/MediVault/assets/100946390/94fcd3bc-df22-43ba-b867-5b496511ba3f" alt="Screenshot 2" width="600" height="400">
+<div align="center">
+<img align="center" src="https://github.com/Bhavesh29patil/MediVault/assets/100946390/cfbb4831-f8cc-4bd6-8899-dc6a6df734ab" alt="Screenshot 1" width="600" height="400">
 <p align="center"><em>Screenshot </em></p>
-
-<br></br>
-<img src="https://github.com/Bhavesh29patil/MediVault/assets/100946390/cfbb4831-f8cc-4bd6-8899-dc6a6df734ab" alt="Screenshot 1" width="600" height="400">
-<p align="center"><em>Screenshot </em></p>
+ </div>
 
 
 
